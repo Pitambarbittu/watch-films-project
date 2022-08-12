@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="netflix party,watch netflix with friends,disney+,youtube,prime video,LET'S WATCH FILM">
+    <meta name="description"
+        content="Text and talk while enjoying Netflix, Amazon Prime, Disney+, HBO MAX, and YouTube together with friends. Watch your favorite movies and shows in perfect sync.">
+    <meta name="author" content="Rave Inc.">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-56e4e05b09.png">
+    <link rel="icon" type="image/png" href="img/favicon-black.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-black.ico" sizes="16x16">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="theme-color" content="#ffffff">
+    <title>Rave - Watch Netflix, YouTube, Disney+, Prime & more together with friends!</title>
+
+
+   <!-- Custom Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+ <link href="css/all.min-d3928880a8.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/main-ebb3d46f14.css" rel="stylesheet">
+   
+    <!-- Facebook Meta -->
+    <meta name="og:url" content="https://rave.io">
+    <meta name="og:title" content="Rave - Videos with Friends">
+    <meta name="og:description"
+        content="Text and talk while enjoying Netflix, Amazon Prime, Disney+, HBO MAX, and YouTube together with friends.">
+    <meta name="og:image" content="https://rave.io/img/rave_square-2a209a47a5.jpg">
+    <!-- Safari Smart Banner -->
+    <meta name="apple-itunes-app" content="app-id=929775122">
+
+</head>
+
+<body id="index-body">
+    <video autoplay muted loop playsinline id="videoBG" poster="img/video_bg-f3df60380f.webp">
+        <source src="https://img.prod.wemesh.com/static/videos/bgvideo.mp4" type="video/mp4">
+    </video>
+
+
+    <!--header section start-->
+    <header class="header ">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/">
+                        <img class="homepage-logo" src="popular-social-media-reels-multiclip-260nw-1790683118-removebg-preview.png" alt="rave logo">
+                    </a>
+                </div>
+                <div class="header__nav">
+                    <ul id="index-header__nav-primary" class="header__nav-primary">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://rave.dj">RaveDJ</a></li>
+                        <li><a href="https://shop.rave.io">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header section end-->
+
+
+
+
+    <!--hero section start-->
+    <section class="hero">
+        <h1 data-translate-key="watch-together" class="main-heading">LET'S WATCH FILMS</h1>
+        <div class="mockups">
+            <div class="phone-wrapper device-group">
+                <a id="mac" class="device" onclick="(copyUrlToClipboard())" href="https://app.rave-web.com/mac"> 
+                    <div class="mac-wrapper device-wrapper">
+                        <img class="mac-mockup device-mockup" src="mac_mockup-db852cedc1.webp" alt="mac">
+                        <video muted autoplay loop playsinline id="macvid" poster="img/mac-e2c4164a1b.webp">
+                            <source src="https://img.prod.wemesh.com/static/videos/mac.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 class="hero-label mac-label">
+                        <i class="fab fa-apple"></i> Mac
+                    </h3>
+                </a>
+
+                <a id="iphone" class="device" href="https://apps.apple.com/us/app/rave-watch-party/id929775122">
+                    <div class="iphone-wrapper device-wrapper">
+                        <img class="iphone-mockup device-mockup" src="iphone_mockup-d25d49bc60.webp" alt="iphone">
+                        <video muted autoplay loop playsinline id="iphonevid" poster="img/ios-e3ad0dddb7.webp">
+                            <source src="https://img.prod.wemesh.com/static/videos/ios_video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 class="hero-label iphone-label">
+                        <i class="fab fa-apple"></i> iPhone
+                    </h3>
+                </a>
+            </div>
+            <div class="pc-wrapper device-group">
+                <a id="android" class="device" href="https://play.google.com/store/apps/details?id=com.wemesh.android">
+                    <div class="android-wrapper device-wrapper">
+                        <img class="android-mockup device-mockup" src="android_mockup-8db43a2749.webp" alt="android phone">
+                        <video muted autoplay loop playsinline id="androidvid" poster="img/android-38efb01d29.webp">
+                            <source src="https://img.prod.wemesh.com/static/videos/android_video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <h3 class="hero-label android-label">
+                        <i class="fab fa-google-play"></i> Android
+                    </h3>
+                </a>
+                <a id="desktop" class="device" onclick="copyUrlToClipboard(); isWindows() ? downloadRave(event) : null" href="https://app.rave-web.com/windows">
+                    <div class="windows-wrapper device-wrapper">
+                        <img class="desktop-mockup device-mockup" src="desktop_mockup-e84a1ba120.webp" alt="pc">
+                        <video muted autoplay loop playsinline id="desktopvid" poster="img/windows-06f1073f68.webp">
+                            <source src="https://img.prod.wemesh.com/static/videos/windows.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 class="hero-label windows-label">
+                        <i class="fab fa-windows"></i> Windows
+                    </h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer start-->
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+
+                <div class="social">
+                    <ul>
+                        <li class="facebook"><a href="https://www.facebook.com/bittu.bhadra123/"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li class="instagram"><a href="https://www.instagram.com/bit2_bhadra/"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li class="twitter"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="youtube"><a href="https://www.youtube.com/"><i
+                                    class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h5 class="footer-links">
+            <a id="index-footer-a" class="footer-a" href="/privacy.html">Privacy Policy |</a>
+            
+            <a id="index-footer-a" class="footer-a" href="/terms.html">Terms of Service</a>
+        </h5>
+        <div id="index-footer__copy" class="footer__copy">
+        
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <!-- USE CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+   
+
+
+    <!-- Theme JavaScript -->
+    <script src="js/main-a1a5cc9b0b.js"></script>
+    <!-- <script src="js/main-a1a5cc9b0b.js?s19rn"></script>
+    <script src="js/index-6bf5eb3d05.js?s19rn"></script> -->
+    <script>
+        let appPath
+        var urlParams = new URLSearchParams(window.location.search);
+        const raveIdRegex = /[\w\d]{8}-[\w\d]{4}-[\w\d]{4}-[\w\d]{4}-[\w\d]{12}/
+        if (urlParams.get('openRaveId') && raveIdRegex.test(urlParams.get('openRaveId'))) {
+            appPath = `rave://mesh/${urlParams.get('openRaveId')}`;
+        }
+        else if(urlParams.get('openVideoUrl')) {
+            appPath = `rave://video/${encodeURIComponent(urlParams.get('openVideoUrl'))}`;
+        }
+
+        if (appPath) {
+            window.location.href = appPath
+            // window.addEventListener("mousemove", () => {
+            //     window.history.replaceState(null, '', window.location.origin + window.location.pathname)
+            // }, { once: true })
+        }
+
+        function copyUrlToClipboard(){
+            if(appPath){
+                navigator.clipboard.writeText(appPath);
+            }            
+        }
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-60739136-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+   <script src="./index.js"></script>
+</body>
+
+</html>
